@@ -6,6 +6,7 @@ const buttons = document.querySelectorAll(".button");
 const operators = document.getElementsByClassName("operator");
 
 let input = "";
+
 buttons.forEach((btn) => {
   btn.addEventListener("click", function () {
     const value = btn.value;
@@ -23,7 +24,7 @@ buttons.forEach((btn) => {
         // √
         expression = expression.replace(/√(\d+(\.\d+)?)/g, "Math.sqrt($1)");
         // factorial
-        expression = expression.replace(/(\d+)!/g, "factorial($1)");
+        expression = expression.replace(/(\d+)!/g, "factorialCalculate($1)");
         // lg
         expression = expression.replace(/lg(\d+(\.\d+)?)/g, "Math.log10($1)");
         // ln
