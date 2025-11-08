@@ -1,105 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Momo+Trust+Display&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Momo+Trust+Display&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(240, 236, 140);
- 
 }
-main{
-max-width:330px;
+main {
+  max-width: 400px;
   width: 100%;
+  aspect-ratio: 9 / 16;
   max-height: 100vh;
   background-color: hsl(60, 2%, 9%);
-  padding:0.9rem;
-  border-radius: 1rem;
-  box-shadow: rgba(254, 255, 255, 0.4) 0px 0px 1px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  padding: 0.9rem;
+  box-shadow: rgba(254, 255, 255, 0.4) 0px 0px 1px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
-main, button{
+main,
+button {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   color: rgb(243, 232, 172);
 }
-.screen{
-  min-height: 140px;
+.screen {
+  height: 33vh;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items:end;
+  justify-content: space-around;
   background-color: rgb(251, 255, 254);
   color: black;
-  padding:1rem 0.6rem 0 0.4rem ;
+  padding: 0rem 0rem 0 0.5rem;
   border-radius: 1rem;
-  margin: 0.5rem 0 0.8rem 0;
-  overflow:hidden;
-
+  margin: 0rem 0 0.8rem 0;
+  overflow: hidden;
 }
-#output-num{
-  font-size:2.8rem;
+#output-num {
+  font-size: 2.8rem;
 }
-.keyboard{
+.keyboard {
   display: grid;
-  grid-template-columns:repeat(4, 1fr);
-  gap:0.3rem;
+  height: 62vh;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.3rem;
 }
-.changer{
-  display:none;
+.changer {
+  display: none;
 }
-button{
+button {
   border-radius: 1rem;
   background-color: transparent;
   cursor: pointer;
 }
-button:active{
+button:active {
   scale: 0.98;
 }
-.operator{
+.operator {
   color: rgb(24, 167, 255);
 }
-.e-operator{
+.e-operator {
   color: rgb(247, 186, 63);
 }
-svg{
+svg {
   width: 2rem;
   margin-top: 10px;
 }
 
 @media (min-width: 800px) {
   html {
-    font-size: 19px;
-  }
-  .screen{
-    min-height:155px;
+    font-size: 16px;
   }
   main {
-    max-width: 400px;
+    max-width: 700px;
+    border-radius: 0.5rem;
   }
+  .screen {
+    height:30vh ;
+    padding: 0 1.2rem 0 0;
+  }
+  #output-num {
+  font-size: 5rem;
+}
+  #input-num {
+  padding-top: 1rem;
+}
 }
 
 @media (min-width: 480px) and (max-width: 800px) {
   html {
-    font-size: 17px;
+    font-size: 16px;
   }
   main {
-    max-width: 360px;
+    max-width: 800px;
   }
+  .screen {
+    height:32vh ;
+    padding: 0 1.2rem 0 0;
+  }
+  #input-num {
+  padding-top: 0.2rem;
+}
+  #output-num {
+  font-size: 4.5rem;
+}
+ 
+  
 }
 
 @media (max-width: 480px) {
   html {
     font-size: 15px;
   }
- .screen{
-  min-height:125px;
- }
-  main {
-    max-width: 320px;
+   main {
+    max-width: 480px;
   }
+  .screen {
+    min-height: 125px;
+    font-size: 150px;
+  }
+  #output-num {
+  font-size:  5rem;
+}
+ 
 }

@@ -6,7 +6,6 @@ const buttons = document.querySelectorAll(".button");
 const operators = document.getElementsByClassName("operator");
 
 let input = "";
-
 buttons.forEach((btn) => {
   btn.addEventListener("click", function () {
     const value = btn.value;
@@ -32,7 +31,7 @@ buttons.forEach((btn) => {
 
         let result = eval(expression);
         // Outputa daha əlavə etməsin
-        if (screenoutput.textContent.length >= 15) return; 
+        if (screenoutput.textContent.length > 9 ) return; 
         screenoutput.textContent = result;
       } catch (err) {
         screenoutput.textContent = "Error";
@@ -86,8 +85,8 @@ function resizeFont() {
   const length = screeninput.textContent.length;
 
   if (length > 12) {
-    screeninput.style.fontSize = "1.8rem";
+    screeninput.style.fontSize = "2.8rem";
   } else {
-    screeninput.style.fontSize = "2.4rem";
+    screeninput.style.fontSize = "3.3rem";
   }
 }
