@@ -29,15 +29,16 @@ main, button{
   color: rgb(243, 232, 172);
 }
 .screen{
-  display:block;
   min-height: 140px;
-  text-align: end;
+  display: flex;
+  flex-direction:column;
+  align-items:end;
   background-color: rgb(251, 255, 254);
   color: black;
   padding:1rem 0.6rem 0 0.4rem ;
   border-radius: 1rem;
   margin: 0.5rem 0 0.8rem 0;
-  overflow-x:hidden;
+  overflow:hidden;
 
 }
 #output-num{
