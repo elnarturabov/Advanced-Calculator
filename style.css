@@ -57,7 +57,7 @@ button {
 }
 button {
   border-radius: 1rem;
-  background-color: transparent;
+  background-color: #5350504f;
   cursor: pointer;
 }
 button:active {
