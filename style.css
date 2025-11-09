@@ -125,6 +125,7 @@ svg {
   .screen {
     min-height: 125px;
     font-size: 150px;
+    padding:0 1rem 0 0;
   }
   #output-num {
   font-size:  5rem;
